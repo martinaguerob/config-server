@@ -19,6 +19,10 @@ spring:
           uri: lb://customers-service
           predicates:
             - Path=/customers/**
+        - id: profiles-service
+            uri: lb://profiles-service
+            predicates:
+              - Path=/profiles/**
         - id: accounts-service
             uri: lb://accounts-service
             predicates:
